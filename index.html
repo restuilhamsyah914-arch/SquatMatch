@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SquadMatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="#">🟣 SquadMatch</a>
+        <nav>
+            <a href="#discover">Temukan teman</a>
+            <a href="#math">Operasi Himpunan</a>
+        </nav>
+        <span class="user">RI</span>
+    </header>
+    <section class="hero">
+        <div>
+            <p class="eyebrow">YOUR PEOPLE. YOUR SQUAD.</p>
+            <h1>Temukan teman<br><em>sepemikiran.</em></h1>
+            <p>Cari teman mabar, partner coding, atau kelompok belajar berdasarkan minat yang sama.</p>
+            <a class="cta" href="#discover">Mulai cari teman →</a>
+        </div>
+        <div class="hero-art">
+            <div class="bubble">🎮</div>
+            <div class="float">✦ Match found!</div>
+            <div class="hero-note">
+                <b>Find your squad</b>
+                <small>Teman baru, tujuan sama.</small>
+                <div class="faces">A B C</div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section id="discover">
+            <div class="heading">
+                <div>
+                    <p class="eyebrow">DISCOVER PEOPLE</p>
+                    <h2>Cari teman sepemikiran</h2>
+                    <p>Pilih minatmu, lalu temukan orang dengan kesukaan yang sama.</p>
+                </div>
+                <div class="count">
+                    <b id="count">0</b>
+                    <small>profil ditemukan</small>
+                </div>
+            </div>
+            <div class="panel">
+                <b>01 Minat kamu</b>
+                <small>Pilih satu atau lebih</small>
+                <div class="choices" id="choices">
+                    <label><input type="checkbox" value="Gaming" checked> 🎮 Gaming</label>
+                    <label><input type="checkbox" value="Coding" checked> 💻 Coding</label>
+                    <label><input type="checkbox" value="Futsal"> ⚽ Futsal</label>
+                    <label><input type="checkbox" value="Desain"> 🎨 Desain</label>
+                    <label><input type="checkbox" value="Belajar"> 📚 Belajar</label>
+                    <label><input type="checkbox" value="Musik"> 🎧 Musik</label>
+                </div>
+                <button class="cta" id="find">Cari teman sepemikiran →</button>
+                <button class="plain" id="reset">Reset pilihan</button>
+            </div>
+            <div class="toolbar">
+                <div>
+                    <h3>Rekomendasi teman</h3>
+                    <small id="caption">Profil dengan minat yang sama.</small>
+                </div>
+                <select id="mode">
+                    <option value="intersection">Minat sama (Irisan)</option>
+                    <option value="union">Semua minat (Union)</option>
+                    <option value="difference">Minat tambahan (Difference)</option>
+                </select>
+            </div>
+            <div class="profiles" id="profiles"></div>
+            <p id="empty" class="empty" hidden>Belum ada profil yang cocok. Coba pilih minat lainnya.</p>
+        </section>
+        <section id="math" class="math">
+            <div class="center">
+                <p class="eyebrow">DISCRETE MATHEMATICS</p>
+                <h2>Matematika di balik pencocokan</h2>
+                <p>Operasi himpunan digunakan untuk membandingkan minat pengguna.</p>
+            </div>
+            <div class="math-grid">
+                <article>
+                    <strong>A ∩ B</strong>
+                    <h3>Irisan (Intersection)</h3>
+                    <p>Menampilkan minat yang sama antara kamu dan teman.</p>
+                </article>
+                <article>
+                    <strong>A ∪ B</strong>
+                    <h3>Gabungan (Union)</h3>
+                    <p>Menggabungkan seluruh minat tanpa duplikasi.</p>
+                </article>
+                <article>
+                    <strong>A − B</strong>
+                    <h3>Selisih (Difference)</h3>
+                    <p>Menampilkan minat yang ada di A tetapi tidak ada di B.</p>
+                </article>
+            </div>
+            <div class="calculation">
+                <div>
+                    <p class="eyebrow">LIVE SET CALCULATION</p>
+                    <h3>Hasil operasi himpunan</h3>
+                    <small>Perhitungan berdasarkan minatmu dan profil teratas.</small>
+                </div>
+                <div id="calc">Pilih minat lalu tekan tombol cari.</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <b>🟣 SquadMatch</b>
+        <span>Temukan squad-mu. Bangun hal hebat bersama.</span>
+        <small>Demo proyek Matematika Diskrit · Operasi Himpunan</small>
+    </footer>
+    <div id="toast"></div>
+    <script src="script.js"></script>
+</body>
+</html>
